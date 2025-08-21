@@ -1,0 +1,211 @@
+{
+  "id": "savant",
+  "nom": "Savant",
+  "type": "classe",
+  "description": "Maître de l’analyse, de la stratégie et du soutien tactique. Le Savant est un intellectuel de terrain capable de guider ses alliés avec une précision chirurgicale.",
+  "niveauMax": 20,
+  "desVie": 8,
+
+  "maitrises": {
+    "armures": ["armures légères"],
+    "armes": ["armes simples", "rapières", "épées courtes", "fouets"],
+    "outils": ["un kit d’artisan au choix"],
+    "sauvegardes": ["intelligence", "sagesse"],
+    "competences": ["au choix parmi arcanes, histoire, intuition, investigation, médecine, nature, persuasion, religion (x2)"]
+  },
+
+  "capacitesParNiveau": [
+    {
+      "niveau": 1,
+      "capacites": [
+        {
+          "nom": "Analyse savante",
+          "type": "core",
+          "resume": "Analyse une cible pour obtenir des bonus et exploiter ses faiblesses.",
+          "description": "Utilisez une action bonus pour désigner une créature comme Cible analysée. Vous pouvez utiliser votre Intelligence à la place de la Force ou Dextérité pour les attaques et dégâts contre cette cible. Vous infligez un bonus de dégâts égal à votre dé d’Intellect (1d6 au départ) et la cible a désavantage sur ses attaques contre vous. Vous apprenez des informations sur elle au fil du combat (CA, meilleure stat, type, etc.)."
+        },
+        {
+          "nom": "Défense prédictive",
+          "type": "core",
+          "resume": "Utilise l’intelligence à la place de la dextérité pour calculer la CA.",
+          "description": "Tant que vous portez une armure légère ou aucune armure, vous pouvez utiliser votre Intelligence à la place de votre Dextérité pour calculer votre classe d’armure (CA)."
+        },
+        {
+          "nom": "Étude savante",
+          "type": "core",
+          "resume": "Vous choisissez une activité savante au niveau 1, puis à 4, 7, 13, 18.",
+          "description": "Vous commencez votre apprentissage savant avec une activité spécialisée, puis vous en apprenez d'autres aux niveaux clés."
+        },
+        {
+          "nom": "Étude rapide",
+          "type": "poursuite",
+          "resume": "Permet d’apprendre temporairement une compétence, un outil ou une langue.",
+          "description": "Vous gagnez la maîtrise d’une compétence, d’un outil, ou apprenez une langue. En 1h (repos court ou long), vous pouvez remplacer cette compétence/langue par une autre si vous avez un exemple pour apprendre (livre, prof...)."
+        }
+      ]
+    },
+    {
+      "niveau": 2,
+      "capacites": [
+        {
+          "nom": "Intellect génial",
+          "type": "core",
+          "resume": "Dé d’intellect (1d6) et 3 capacités spéciales.",
+          "description": "Vous obtenez un dé d’intellect (1d6) et 3 réactions utilisables : Fioriture calculée (ajouter au CA), Observation puissante (bonus aux dégâts alliés), Perspicacité merveilleuse (bonus à un test d’allié)."
+        },
+        {
+          "nom": "Esprit aiguisé",
+          "type": "core",
+          "resume": "Action bonus pour Aider, Fouiller ou faire un test d’intelligence rapide.",
+          "description": "Vous pouvez utiliser une action bonus pour effectuer l’action Aider, Fouiller, ou faire un test d’intelligence lié à une créature ou objet visible."
+        }
+      ]
+    },
+    {
+      "niveau": 3,
+      "capacites": [
+        {
+          "nom": "Étudiant de la guerre",
+          "type": "sousClasse",
+          "resume": "Gagne Histoire et Persuasion + maîtrise des stratégies.",
+          "description": "Vous gagnez la maîtrise en Histoire et Persuasion. Vous maîtrisez deux jeux de stratégie. Vous gagnez aussi la maîtrise des armures intermédiaires, des boucliers et de toutes les armes martiales non 'lourdes'."
+        },
+        {
+          "nom": "Commandant tactique",
+          "type": "sousClasse",
+          "resume": "Peut utiliser des Ordres pour diriger les alliés.",
+          "description": "Vous apprenez 4 Ordres (Attaque, Défensif, Manœuvre, Soutien). En remplaçant une attaque par un Ordre, vous permettez à une créature à 9m d'agir immédiatement selon l’Ordre donné (ex : attaquer, esquiver, se déplacer, aider...)."
+        }
+      ]
+    },
+    {
+      "niveau": 4,
+      "capacites": [
+        {
+          "nom": "Amélioration de caractéristique",
+          "type": "core",
+          "resume": "+2 caractéristiques ou don.",
+          "description": "Vous pouvez augmenter une caractéristique de +2, deux de +1, ou choisir un don."
+        },
+        {
+          "nom": "Traditions",
+          "type": "poursuite",
+          "resume": "Ajoute Histoire + interactions sociales facilitées via coutumes.",
+          "description": "Vous gagnez Histoire. Lors d’un test d’Intelligence (Histoire), ajoutez un dé d’Intellect. Vous avez l’avantage aux jets de Charisme contre des figures importantes si vous respectez les coutumes locales."
+        }
+      ]
+    },
+    {
+      "niveau": 5,
+      "capacites": [
+        {
+          "nom": "Perspicacité inégalée",
+          "type": "core",
+          "resume": "Ajoute le dé d’intellect aux jets mentaux.",
+          "description": "Vous pouvez utiliser un jet de dé d’intellect pour améliorer les jets de sauvegarde alliés ou les vôtres en Intelligence, Sagesse, Charisme."
+        },
+        {
+          "nom": "Réflexes vifs (2)",
+          "type": "core",
+          "resume": "Vous avez droit à 2 réactions par tour.",
+          "description": "Vous pouvez utiliser deux réactions par round (mais une seule par déclencheur)."
+        }
+      ]
+    },
+    {
+      "niveau": 6,
+      "capacites": [
+        {
+          "nom": "Supériorité stratégique",
+          "type": "sousClasse",
+          "resume": "Attaque deux fois, ou Foncer / Aider à la place.",
+          "description": "Vous pouvez attaquer deux fois lors de l’action Attaque. Vous pouvez remplacer l'une des deux par l’action Foncer, Se désengager ou Aider."
+        }
+      ]
+    },
+    {
+      "niveau": 7,
+      "capacites": [
+        {
+          "nom": "Vigilance aiguisée",
+          "type": "core",
+          "resume": "Impossible à surprendre, initiative boostée.",
+          "description": "Vous ne pouvez pas être surpris. Vous ajoutez votre modificateur d’Intelligence à votre initiative. En lançant l’initiative, vous pouvez immédiatement désigner une cible avec Analyse Savante."
+        },
+        {
+          "nom": "Astrologie",
+          "type": "poursuite",
+          "resume": "Permet de remplacer un d20 par un jet enregistré sous les étoiles.",
+          "description": "Vous gagnez Arcanes. Lors d’un test d’Intelligence (Arcanes), ajoutez un jet de votre dé d’intellect. À chaque repos long en voyant les étoiles, vous notez 1d20. Vous pouvez remplacer un jet de d20 par celui-ci jusqu’au prochain repos."
+        }
+      ]
+    },
+    {
+      "niveau": 10,
+      "capacites": [
+        {
+          "nom": "Génie tactique",
+          "type": "sousClasse",
+          "resume": "Donne un Ordre dès l’initiative + bonus alliés.",
+          "description": "Quand vous lancez l’initiative, vous pouvez émettre un Ordre immédiatement. Vous pouvez aussi accorder un jet d’intellect à un allié qui attaque votre Cible analysée."
+        }
+      ]
+    },
+    {
+      "niveau": 13,
+      "capacites": [
+        {
+          "nom": "Réflexes vifs (3)",
+          "type": "core",
+          "resume": "Vous gagnez une 3e réaction.",
+          "description": "Vous avez désormais 3 réactions par tour (une par déclencheur)."
+        },
+        {
+          "nom": "Théologie",
+          "type": "poursuite",
+          "resume": "Accès à Cérémonie + compréhension des cultes.",
+          "description": "Vous gagnez Religion. Vous pouvez lire/écrire/parler Céleste. Vous apprenez le sort Cérémonie (rituel, 1 fois par repos long, sans composantes)."
+        }
+      ]
+    },
+    {
+      "niveau": 15,
+      "capacites": [
+        {
+          "nom": "Maître tacticien",
+          "type": "sousClasse",
+          "resume": "Les Ordres inspirent (PV temporaires).",
+          "description": "Chaque fois que vous émettez un Ordre, la cible gagne des PV temporaires égaux à votre modificateur d’Intelligence (min. 1)."
+        }
+      ]
+    },
+    {
+      "niveau": 18,
+      "capacites": [
+        {
+          "nom": "Réflexes vifs (4)",
+          "type": "core",
+          "resume": "4 réactions par tour.",
+          "description": "Vous disposez désormais de 4 réactions par round (une par déclencheur)."
+        },
+        {
+          "nom": "Secrets et murmures",
+          "type": "poursuite",
+          "resume": "Détecte des rumeurs / événements secrets.",
+          "description": "Vous gagnez Discrétion. Ajoutez un jet de dé d’intellect aux tests de discrétion. En 1h de veille dans une localité, vous apprenez un secret ou événement majeur de la semaine écoulée."
+        }
+      ]
+    },
+    {
+      "niveau": 20,
+      "capacites": [
+        {
+          "nom": "Intellect incomparable",
+          "type": "core",
+          "resume": "Intelligence +4 (max 24) + dé d’intellect amélioré.",
+          "description": "Votre Intelligence augmente de 4 (max 24). Lorsque vous lancez un dé d’intellect, si le résultat est inférieur à votre modificateur d’Intelligence, vous le remplacez par ce modificateur."
+        }
+      ]
+    }
+  ]
+}
