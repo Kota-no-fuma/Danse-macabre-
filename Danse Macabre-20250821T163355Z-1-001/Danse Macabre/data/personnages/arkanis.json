@@ -1,0 +1,173 @@
+{
+  "id": "arkanis",
+  "nom": "Arkanis",
+  "niveau": 1,
+  "origine": "malice",
+  "espece": "incarnation",
+  "classe": "savant",
+  "sousClasse": "tacticien",
+
+  "caracteristiques": {
+    "force": 7,
+    "dexterite": 15,
+    "constitution": 14,
+    "intelligence": 20,
+    "sagesse": 18,
+    "charisme": 13,
+    "sauvegardesMaitrisees": ["INTELLIGENCE", "SAGESSE"],
+    "bonusMaitrise": 2
+  },
+
+ 
+  "bonusCarac": {
+    "pointsLibresOrigine": 2,
+    "bonusIntelligenceEspece": 0,
+    "maxIntelligence": 30
+  },
+
+  "competencesMaitrisees": [
+    "Discrétion",
+    "Perspicacité",
+    "Compétence supplémentaire au choix",
+    "au choix parmi arcanes, histoire, intuition, investigation, médecine, nature, persuasion, religion (x2)"
+  ],
+
+  "maitrises": {
+    "armures": ["armures légères"],
+    "armes": ["armes simples", "rapières", "épées courtes", "fouets"],
+    "outils": ["un kit d’artisan au choix"],
+    "sauvegardes": ["intelligence", "sagesse"]
+  },
+
+  "resistances": ["foudre"],
+  "immunites": ["nécrotique", "dégâts de chute"],
+
+  "capacitesActives": [
+    {
+      "niveau": 1,
+      "source": "origine",
+      "nom": "Éthéré",
+      "resume": "Action bonus hors lumière → forme éthérée.",
+      "description": "Vous pouvez utiliser une action bonus si vous n’êtes pas en pleine lumière pour devenir éthéré : immunité aux dégâts physiques, résistance à tous les autres sauf radiant, invisible sans lumière solaire. Vous ne pouvez pas infliger de dégâts d’arme, et vos sorts/pouvoirs ont 50% d’échec. Action bonus requise pour redevenir matériel."
+    },
+    {
+      "niveau": 1,
+      "source": "origine",
+      "nom": "Essence liée",
+      "resume": "Réapparition à 1 PV depuis un objet après 0 PV.",
+      "description": "Quand vous tombez à 0 PV, votre essence est absorbée dans un objet proche. Vous réapparaissez avec 1 PV si cet objet est détruit. Un seul objet peut contenir votre essence à la fois."
+    },
+    {
+      "niveau": 1,
+      "source": "classe",
+      "nom": "Analyse savante",
+      "resume": "Désigne une cible : bonus de dégâts, désavantage sur elle.",
+      "description": "Action bonus pour désigner une cible analysée. Intelligence utilisée à la place de la Force/Dextérité pour les attaques et dégâts. Bonus de dégâts via le dé d’intellect. Désavantage sur ses attaques contre vous."
+    },
+    {
+      "niveau": 1,
+      "source": "classe",
+      "nom": "Défense prédictive",
+      "resume": "Utilise intelligence pour calculer la CA.",
+      "description": "Tant que vous portez une armure légère ou aucune armure, vous utilisez votre Intelligence à la place de votre Dextérité pour calculer votre CA."
+    },
+    {
+      "niveau": 1,
+      "source": "classe",
+      "nom": "Étude savante",
+      "resume": "Choix d'une activité savante dès le niveau 1.",
+      "description": "Vous commencez avec une activité savante (Étude rapide), puis en gagnez d’autres aux niveaux 4, 7, 13 et 18."
+    },
+    {
+      "niveau": 1,
+      "source": "poursuite",
+      "nom": "Étude rapide",
+      "resume": "Maîtrise temporaire de compétence/langue/outil.",
+      "description": "Vous gagnez la maîtrise d’une compétence, outil ou langue. Vous pouvez la changer après 1h si vous avez un support d’apprentissage."
+    }
+  ],
+
+  "capacitesPassives": [
+    {
+      "niveau": 1,
+      "source": "origine",
+      "nom": "Non-mangeur",
+      "description": "Vous n’avez pas besoin de manger, boire ou respirer."
+    }
+  ],
+
+  "capacitesFutures": [
+    {
+      "niveau": 2,
+      "nom": "Intellect génial",
+      "source": "classe"
+    },
+    {
+      "niveau": 3,
+      "nom": "Copie",
+      "source": "espece"
+    },
+    {
+      "niveau": 3,
+      "nom": "Étudiant de la guerre",
+      "source": "classe"
+    },
+    {
+      "niveau": 3,
+      "nom": "Commandant tactique",
+      "source": "classe"
+    },
+    {
+      "niveau": 4,
+      "nom": "Traditions",
+      "source": "poursuite"
+    },
+    {
+      "niveau": 7,
+      "nom": "Astrologie",
+      "source": "poursuite"
+    },
+    {
+      "niveau": 13,
+      "nom": "Théologie",
+      "source": "poursuite"
+    },
+    {
+      "niveau": 18,
+      "nom": "Secrets et murmures",
+      "source": "poursuite"
+    }
+  ],
+
+  "jetDeSauvegarde": {
+    "baseDD": 8,
+    "modificateur": "intelligence",
+    "ajouterBonusDeMaitrise": true
+  },
+
+  "equipement": {
+  "armure": {
+    "nom": "Armure de cuir",
+    "type": "légère",
+    "bonusCA": 11,
+    "modificateur": "DEXTERITE"
+  },
+  "armes": [
+    {
+      "nom": "Rapière",
+      "type": "finesse",
+      "degats": "1d8",
+      "carac": "DEXTERITE",
+      "portee": "corps à corps"
+    },
+    {
+      "nom": "Fouet",
+      "type": "finesse, allonge",
+      "degats": "1d4",
+      "carac": "DEXTERITE",
+      "portee": "3 m"
+    }
+  ]
+}
+
+}

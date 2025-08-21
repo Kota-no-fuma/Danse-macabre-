@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiche - Arkanis</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="logic.js" defer></script>
+</head>
+<body>
+  <div class="layout">
+    <header>
+      <div class="header-left">
+        <h1 id="char-name">Arkanis</h1>
+        <p id="char-meta">Niveau 1 • Savant • Incarnation</p>
+      </div>
+      <nav class="tabs">
+        <div class="tabs-left">
+          <button onclick="showTab('action')">Action</button>
+          <button onclick="showTab('capacites')">Capacités</button>
+          <button onclick="showTab('traits')">Traits</button>
+          <button onclick="showTab('equipement')">Équipement</button>
+        </div>
+        <div class="tabs-right">
+          <button onclick="showTab('progression')">Évolution</button>
+        </div>
+      </nav>
+    </header>
+
+  <div class="grid-summary align-split">
+  <div class="left-block">
+    <section id="stats-block" class="box"></section>
+    <section class="box">
+      <div class="carac-competence-block">
+        <div class="carac-header" id="caracs-block"></div>
+        <div class="carac-header" id="competences-block"></div>
+      </div>
+    </section>
+  </div>
+  <div class="right-block">
+    <section id="sauvegardes-block" class="box"></section>
+  </div>
+</div>
+
+
+
+
+    <main>
+      <section id="action" class="tab-content">
+        <h2>Actions</h2>
+
+        <div class="action-box">
+          <h3>Attaques</h3>
+          <div class="sub-box">
+            <strong>Rapière</strong> (finesse)<br />
+            Dégâts : 1d8 +1<br />
+            Portée : corps à corps
+          </div>
+          <div class="sub-box">
+            <strong>Fouet</strong> (finesse, allonge)<br />
+            Dégâts : 1d4 +1<br />
+            Portée : 3 m
+          </div>
+        </div>
+
+        <div class="action-box">
+          <h3>Actions Bonus</h3>
+          <div class="sub-box">
+            <strong>Éthéré</strong><br />
+            <em>Action bonus hors lumière → forme éthérée.</em><br />
+            Vous pouvez utiliser une action bonus si vous n’êtes pas en pleine lumière pour devenir éthéré : immunité aux dégâts physiques, résistance à tous les autres sauf radiant, invisible sans lumière solaire. Vous ne pouvez pas infliger de dégâts d’arme, et vos sorts/pouvoirs ont 50% d’échec. Action bonus requise pour redevenir matériel.
+          </div>
+        </div>
+
+        <div class="action-box">
+          <h3>Autres Actions</h3>
+          <div class="sub-box">
+            <p>Attaquer, Esquiver, Se désengager, Se cacher, Aider, Se relever, S'équiper/déséquiper, Lire/boire un objet</p>
+          </div>
+        </div>
+
+        <div class="action-box">
+          <h3>Autres Actions Bonus</h3>
+          <div class="sub-box">
+            <p>Dégainer, Interagir avec un objet, Activer un pouvoir passif</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="capacites" class="tab-content active"></section>
+      <section id="traits" class="tab-content"></section>
+      <section id="progression" class="tab-content"></section>
+
+      <section id="equipement" class="tab-content">
+        <h2>Équipement</h2>
+        <div id="armure-block" class="box"></div>
+        <div id="armes-block" class="box"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
